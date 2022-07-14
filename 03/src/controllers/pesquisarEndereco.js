@@ -8,6 +8,7 @@ export const pesquisarEndereco = async (req, res) => {
         /* const informacoesArquivo = await readFile("./src/enderecosCopy.json"); */
         const informacoesArquivo = await readFile("./src/enderecos.json");
 
+        // @ts-ignore
         const informacoesArquivoJson = JSON.parse(informacoesArquivo);
 
         const cepEncontrado = informacoesArquivoJson.find( elemento => {
